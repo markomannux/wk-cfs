@@ -89,6 +89,11 @@ $config = array(
                     $value = CFS()->get( $map['field'], $post->ID );
 
                     if ($value) {
+
+                        if (is_array($value)) {
+                            $value = current($value); // per gestire i campi select
+                        }
+
                         $props = CFS()->get_field_info( $map['field'], $post->ID );
                         $data['csf'][$map['name']] = array (
                                 "label" => $props['label'],
