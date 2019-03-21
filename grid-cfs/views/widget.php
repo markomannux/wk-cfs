@@ -465,7 +465,7 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 
             <?php foreach ((array)$item['csf'] as $csf) : ?>
                 <?php if ($csf) : ?>
-                    <div><?php echo $csf['label']; ?>: <?php echo $csf['value']; ?></div>
+                    <div><span class="grid-cfs-label"><?php echo $csf['label']; ?>:</span> <?php echo $csf['value']; ?></div>
                 <?php endif; ?>
             <?php endforeach; ?>
         

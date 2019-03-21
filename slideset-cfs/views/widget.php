@@ -317,7 +317,7 @@ $class = $settings['class'] ? ' class="' . $settings['class'] . '"' : '';
                     
                     <?php foreach ((array)$item['csf'] as $csf) : ?>
                         <?php if ($csf) : ?>
-                            <div><?php echo $csf['label']; ?>: <?php echo $csf['value']; ?></div>
+                            <div><span class="slideset-cfs-label"><?php echo $csf['label']; ?>:</span> <?php echo $csf['value']; ?></div>
                         <?php endif; ?>
                     <?php endforeach; ?>
 
